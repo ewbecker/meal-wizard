@@ -1,0 +1,33 @@
+#! /usr/bin/python
+# -*- coding: utf8 -*-
+
+import random
+
+fruehling = ["Blattspinat", "Frühlingszwiebeln", "Spargel", "Kohlrabi", "Paprika", "Blumenkohl"]
+sommer = ["Brokkoli", "Fenchel", "Grüne Bohnen", "Gurke", "Zucchini", "Erbsen"]
+herbst = ["Kürbis", "Schwarzwurzeln", "Chicoree", "Mais", "Wirsing", "Lauch"]
+winter = ["Pastinaken", "Knollensellerie", "Steckrüben", "Kohl", "Rote Bete", "Karotten"]
+
+zubereitung = ["Herd", "Herd", "Ofen", "Ofen", "Fancy", "Joker"]
+proteine = ["Rind/Kalb", "Lamm/Wild", "Geflügel/Eier", "Fisch/Weichtiere", "Milchprodukte/Huelsenfrüchte", "Schwein/Innereien"]
+kohlenhydrate = ["Reis", "Nudeln", "Kartoffeln", "Getreide", "Couscous", "Polenta"]
+kraeuter = ["Petersilie", "Thymian", "Oregano", "Salbei", "Zitronenmelisse", "Estragon"]
+gemuese = [fruehling, sommer, herbst, winter]
+salat = ["Rucola", "Feldsalat", "Lollo Rosso", "Eissalat", "Radicchio", "Mini Romana"]
+gewuerz = ["Safran", "Curry", "Senf", "Ingwer", "Muskat", "Kümmel"]
+nachtisch = ["Eis", "Kuchen", "Kekse", "Obst", "Pudding", "Schmusen"]
+joker = ["Avocado/Pilze", "Kapern/Knoblauch", "Obst/Zitrone", "Kokosnuss/Nüsse", "Sesam/Sojasoße", "Sardinen/Speck"]
+
+rand_z = random.choice(zubereitung)
+rand_p = random.choice(proteine)
+rand_ko = random.choice(kohlenhydrate)
+rand_kr = random.choice(kraeuter)
+rand_g = random.choice(winter)
+rand_s = random.choice(salat)
+rand_gew = random.choice(gewuerz)
+rand_n = random.choice(nachtisch)
+rand_j = random.choice(joker)
+
+#dice_cup = [rand_z, rand_p, rand_ko, rand_kr, rand_g, rand_s, rand_gew, rand_n, rand_j]
+print(rand_z, rand_p, rand_ko, rand_kr, rand_g, rand_s, rand_gew, rand_n, rand_j)
+#print dice_cup
